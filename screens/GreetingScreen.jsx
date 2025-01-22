@@ -5,8 +5,8 @@ import { useNavigation } from "@react-navigation/native";
 const GreetingScreen = () => {
   const navigation = useNavigation();
   const handleStartButton = () => {
-    navigation.navigate("Login")
-  }
+    navigation.navigate("Post");
+  };
   return (
     <View>
       <View
@@ -14,13 +14,15 @@ const GreetingScreen = () => {
           height: "60%",
         }}
       >
-        <Image style={{
-          height:"80%",
-          width: "60%",
-          marginTop: "25%",
-          marginHorizontal:"20%"
-          
-        }} source={require("../assets/images/person.png")}/>
+        <Image
+          style={{
+            height: "80%",
+            width: "60%",
+            marginTop: "25%",
+            marginHorizontal: "20%",
+          }}
+          source={require("../assets/images/person.png")}
+        />
       </View>
       <View>
         <Text
