@@ -1,10 +1,13 @@
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import React from "react";
+import { useNavigation } from "@react-navigation/native";
 
 const PostDirectionScreen = () => {
-  const handleABc = () => {
-    
-  }
+  const navigation = useNavigation();
+    const handleStartButton = () => {
+navigation.navigate('Profile');
+    }
+  
   return (
     <View>
       <View
@@ -141,7 +144,7 @@ const PostDirectionScreen = () => {
           </Text>
         </View>
 
-        <TouchableOpacity
+        <TouchableOpacity onPress={handleStartButton}
           style={{
             backgroundColor: "red",
             padding: 13,
@@ -149,7 +152,7 @@ const PostDirectionScreen = () => {
             borderRadius: 10,
             marginTop: 15,
           }}
-           onPress={handleABc}
+           
         >
             <Text
               style={{

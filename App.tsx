@@ -6,6 +6,7 @@ import GreetingScreen from "./screens/GreetingScreen";
 import PostScreen from "./screens/PostScreen";
 import PostDetailsScreen from "./screens/PostDetailsScreen";
 import PostDirectionScreen from "./screens/PostDirectionScreen";
+import ProfileScreen from "./screens/ProfileScreen";
 
 const App = () => {
   const Stack = createNativeStackNavigator();
@@ -16,6 +17,7 @@ const App = () => {
         <Stack.Screen name="Post" component={PostScreen} />
         <Stack.Screen name="PostDetails" component={PostDetailsScreen} />
         <Stack.Screen name="PostDirection" component={PostDirectionScreen} />
+        <Stack.Screen name="Profile" component={ProfileScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
